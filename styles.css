@@ -1,0 +1,1038 @@
+html {
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 890px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.main-content {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  height: auto;
+  width: 7.5rem;
+  background-color: #e4a28d;
+  color: white;
+  border: 1px solid #e4a28d;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
+.button:hover {
+  border: 1.5px solid #a07061;
+}
+
+
+
+header {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+header .logo {
+  text-align: center;
+  padding: 2rem auto;
+  margin: 3rem auto;
+}
+
+header .logo img {
+  height: 3.5rem;
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+  padding: 0 5.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
+
+nav li img {
+  height: 1.5rem;
+  width: auto;
+  color: rgb(102, 102, 102);
+  vertical-align: bottom;
+}
+
+nav a:hover {
+  color: #e4a28d;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 890px) {
+  .navigation {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .content .logo {
+    margin: 1rem;
+  }
+
+  .logo img {
+    width: auto;
+    height: 2.5rem;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+  }
+
+  .dropbtn img {
+    width: 2.5rem;
+    height: 2.5rem;      
+  }
+
+  .drop-navigation {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 11.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 1rem;
+  }
+
+  .drop-navigation a {
+    display: block;
+    vertical-align: bottom;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .drop-navigation a:hover {
+    color: #fd9dd0;
+  }
+
+  .dropdown:hover .drop-navigation {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header .logo img {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  .dropbtn img {
+    width: 2rem;
+    height: 2rem;      
+  }
+}
+
+#mission-section {
+  background-color: #f9ced5;
+  background-image: url('./images/ribbons.png');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  height: 33rem;
+}
+
+#mission {
+  display: flex;
+  flex-direction: row;
+  height: 33rem;
+}
+
+.image-content {
+  margin-top: 5.5rem;
+}
+
+.image-content img{
+  width: 30rem;
+  height: auto;
+}
+
+#mission .content {
+  height: 15rem;
+  background-color: #f9ced5;
+  border: 1px solid #f9ced5;
+  position: relative;
+  top: 110px;
+  margin-right: 6rem;
+  margin-left: 3rem;
+}
+
+#mission .content-slogan {
+  width: 85%;
+}
+
+h1{
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+
+.content-slogan h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+  color: black;
+}
+
+.button-banner {
+  width: 7.5rem;
+  height: auto;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin-top: 4.5rem;
+  padding: 1rem 0;
+}
+
+.button-banner:hover {
+  border: 1.5px solid #e4a28d;
+}
+
+@media only screen and (max-width: 1030px) {
+  #mission .content {
+    height: 18rem;
+    background-color: #f9ced5;
+    border: 1px solid #f9ced5;
+    position: relative;
+    top: 80px;
+    margin-right: 4rem;
+    margin-left: 1rem;
+  }
+  
+  #mission .content-slogan {
+    width: 95%;
+  }
+
+  h1{
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+  }
+  
+  .content-slogan h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #mission-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto 1rem;
+  }
+  
+  .image-content {
+    display: none;
+  }
+  
+  #mission .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 12rem;
+    margin: 0;
+    padding: 1rem;
+    width: auto;
+    border: 1.5px double #e4a28d;
+    background-color: white;
+    opacity: 0.9;
+  }
+  
+  #mission .content-slogan {
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+  }
+  
+  .content-slogan h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1;
+    color: black;
+  }
+  
+  .button-banner {
+    height: auto;
+    width: 7.5rem;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-top: 4.5rem;
+    padding: 1rem 0;
+  }
+  
+  .button-banner:hover {
+    border: 1.5px solid #e4a28d;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #mission-section {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 30rem;
+  }
+  
+  #mission {
+  height: 30rem;
+  }
+  
+  #mission .content {
+    height: 11.5rem;
+    margin: 1.5rem;
+  }
+    
+  h1{
+    font-size: 1.9rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+  
+  .content-slogan h3 {
+    font-size: 1.2rem;
+  }
+  
+  .button-banner {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}
+
+#occassions {
+  position: relative;
+  width: 100%;
+  height: 81.5rem;  
+  margin: 1.5rem;
+}
+
+#occassions .holiday-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 24.31rem);
+  grid-template-rows: 1/3;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+}
+
+#occassions .holiday-2 {
+  display: grid;
+  grid-template-columns: 75rem;
+  grid-template-rows: 1/2;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.holiday-2 .image-container img {
+  width: 100%;
+  height: 18rem;
+}
+
+.holiday-2 .holiday-info {
+  width: 45%;
+}
+
+.holiday {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.holiday .info {
+    padding-left: 1rem;
+    height: 15rem;
+    justify-items: center;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+  
+.holiday-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.holiday-all {
+  display: none;
+}
+
+@media only screen and (max-width: 1030px) {
+  .occassion-info {
+    display: none;
+  }
+
+  #occassions {
+    width: 100%;
+    position: relative;
+    height: 90rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #occassions .holiday-all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  .holiday {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 45%;
+    height: 43rem;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 #a07061;
+  }
+  
+  .image-container img {
+    width: auto;
+    height: 25rem;
+    margin-top: 1rem;
+  }
+  
+  .image-container {
+    overflow: hidden;
+  }
+
+  .holiday .info {   
+    padding: 0 1rem; 
+    height: 20;
+  }
+    
+  h2 {
+      font-size: 1.4rem;
+      font-weight: 300;
+  }
+    
+  .holiday-info p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #occassions {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  #occassions .holiday-all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0.5rem;
+  }
+
+  .holiday {
+    width: 90%;
+    height: 40rem;
+  }
+  
+  .image-container img {
+    width: auto;
+    height: 20rem;
+  }
+
+  .holiday .info {
+    padding-left: 1rem;
+    height: 19rem;
+    justify-items: center;
+}
+  
+.holiday-info p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+ 
+}
+
+
+#about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 35rem;  
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+#about .author-photo {
+  width: 50%;
+  background-image: url('./images/word\ love\ balloon.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.author-ph-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  margin-left: 22.5rem;
+  margin-top: -3rem;
+}
+
+.photo img {
+  width: 11.5rem;
+  height: 14rem;
+  border-radius: 50%;
+}
+
+.author-ph-img span {
+  background-color: white;
+  font-size: 1rem;
+  width: 10rem;
+  padding: 1rem 1rem;
+  margin-left: 4rem;
+  border: 1.5px solid #e4a28d;
+}
+
+.author-info {
+  width: 50%;
+}
+
+.information {
+  width: 60%;
+  padding: 1.5rem 0 0 3.5rem;
+}
+
+.wider p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+}
+
+.information p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.quote {
+  font-size: 1.1rem;
+  border-left: 1.5px solid #e4a28d;
+  padding: 0.5rem 0 1.5rem 1.5rem;
+  line-height: 1.5;
+}
+
+.service-photo {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.service-photo img {
+  width: auto;
+  height: 35rem;
+}
+
+.information ul {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .photo {
+    margin-left: 13rem;
+    margin-top: -3rem;
+  }
+  
+  .photo img {
+    width: 10rem;
+    height: 13rem;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about .author-photo {
+    margin: 0;
+  }
+
+  .photo {
+    margin-left: 13.5rem;
+    margin-top: -3rem;
+  }
+  
+  .photo img {
+    width: 9.5rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+
+  .author-ph-img span {
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: fit-content;  
+    margin: 0.5rem;
+  }
+
+  #about .author-photo {
+    width: 90%;
+    height: 26rem;
+    background-image: url('./images/word\ love\ balloon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  
+  .author-ph-img {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo {
+    margin-left: 12rem;
+    margin-top: -3rem;
+  }
+  
+  .photo img {
+    width: 6.5rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  
+  .author-ph-img span {
+    background-color: white;
+    font-size: 1rem;
+    width: 10rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1.5px solid #e4a28d;
+  }
+  
+  .author-info {
+    width: 90%;
+  }
+  
+  .information {
+    width: 80%;
+    padding: 1rem 0 0 1rem;
+  }
+
+  .service-photo {
+    width: 100%;
+  }
+  
+  .service-photo img {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+}
+
+
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 1rem;
+  padding-top: 2rem;
+}
+
+.balloon-info h2 {
+  font-size: 2rem;
+}
+
+.balloon-info p {
+letter-spacing: 0.7px;
+line-height: 1;
+font-weight: 200;
+}
+
+.collections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 3rem 10rem;
+}
+
+.balloon-price {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.photo-balloon img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.description {
+  width: 90%;
+}
+
+.description p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.button-white {
+  height: auto;
+  width: 7.5rem;
+  background-color: white;
+  color: black;
+  border: 1px solid #e4a28d;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  margin-left: 2rem;
+}
+
+.button-white:hover {
+  border: 1.5px solid #a07061;
+}
+
+@media only screen and (max-width: 800px) {
+  .collections {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .balloon-price {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 1rem auto;
+  }
+  
+  .photo-balloon img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+  
+  .description {
+    width: 90%;
+  }
+  
+  .description p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 300;
+  }
+}
+
+.areas-info {
+  height: auto;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areas-info h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.areas-list {
+  margin: auto 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.areas-list li {
+  margin: auto 1.5rem;
+  font-size: 1.5rem;
+}
+
+.areas-info p {
+  margin-top: 1.5rem;
+  line-height: 2.5;
+}
+
+.areas-info .button {
+  width: 10rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .areas-info {
+    margin: 3.5rem auto;
+  }
+  
+  .areas-info h2 {
+    font-size: 1.8rem;
+  }
+  
+  .areas-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .areas-list li {
+    margin: auto 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .areas-info p {
+    margin-top: 1.5rem;
+    line-height: 2.5;
+  }
+  
+  .areas-info .button {
+    width: 10rem;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-image: url('./images/footer-image.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+#contact {
+  background-color: black;
+  margin: 2.5rem auto 0 auto;
+  width: 100%;
+}
+
+.contact-idea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 2px double #e4a28d;
+  margin: 1.5rem;
+  padding: 0;
+}
+
+.contact-idea h2, h3 {
+  color: white;
+}
+
+.contact-idea h3 {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+#contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+#contact ul li {
+  color: white;
+}
+
+#contact li img {
+  height: 1.8rem;
+  width: auto;
+  filter: invert(100%);
+  margin: 0 0.5rem;
+}
+
+#contact li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#contact li a:hover {
+  color: #e4a28d;
+}
+
+.follow-section {
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1.5rem;
+
+}
+
+.media {
+  margin: 0 1rem;
+}
+
+.media a {
+  text-decoration: none;
+}
+
+.media a h3:hover {
+  color: #e4a28d;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.media img {
+  width: auto;
+  height: 2rem;
+  filter: invert(100%);
+}
+
+.rights-reserved {
+  display: flex;
+  justify-items: left;
+  color: white;
+  font-size: 0.7rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 1030px) {
+  footer {
+    background-image: none;
+    background: linear-gradient(0deg, rgba(7,7,7,1) 0%, rgba(151,65,65,1) 50%, #e4a28d 100%);
+  }
+
+  #contact {
+    width: 75%;
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 75%;
+    height: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  #contact ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  
+
+  .footer-logo img {
+    width: 75%;
+    height: auto;
+  }
+}
